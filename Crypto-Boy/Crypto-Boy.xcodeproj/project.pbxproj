@@ -16,6 +16,7 @@
 		D317CC1928EA239200388B25 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317CC1828EA239200388B25 /* TopMoversItemView.swift */; };
 		D317CC1B28EB504F00388B25 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317CC1A28EB504F00388B25 /* AllCoinsView.swift */; };
 		D317CC1D28EB506500388B25 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317CC1C28EB506500388B25 /* CoinRowView.swift */; };
+		D3F7360F28EDF6C20040389F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7360E28EDF6C20040389F /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D317CC1828EA239200388B25 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
 		D317CC1A28EB504F00388B25 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
 		D317CC1C28EB506500388B25 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		D3F7360E28EDF6C20040389F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		D317CC1328EA222200388B25 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D3F7360E28EDF6C20040389F /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				D317CC1728EA237800388B25 /* TopMoversView.swift in Sources */,
 				D317CC1B28EB504F00388B25 /* AllCoinsView.swift in Sources */,
 				D317CC1528EA223F00388B25 /* HomeView.swift in Sources */,
+				D3F7360F28EDF6C20040389F /* HomeViewModel.swift in Sources */,
 				D317CC0128EA213300388B25 /* ContentView.swift in Sources */,
 				D317CBFF28EA213300388B25 /* Crypto_BoyApp.swift in Sources */,
 				D317CC1D28EB506500388B25 /* CoinRowView.swift in Sources */,
