@@ -6,13 +6,13 @@
 //
 
 import SwiftUI
-
+import Kingfisher
 struct TopMoversItemView: View {
     let coin: Coin
     var body: some View {
         VStack(alignment: .leading) {
             //image
-            Image(systemName: "bitcoinsign.circle.fill")
+            KFImage(URL(string: coin.image))
                 .resizable()
                 .frame(width: 32, height: 32)
                 .foregroundColor(.yellow)
@@ -23,19 +23,21 @@ struct TopMoversItemView: View {
                     .font(.caption)
                     .fontWeight(.bold)
                 
-                Text("\(coin.currentPrice)")
+                Text(coin.currentPrice.toCurrency())
                     .font(.caption)
                     .foregroundColor(.gray)
             }
             //coin percent change
-            Text("\(coin.priceChangePercentage24H)")
+            Text(coin.priceChangePercentage24H.toPercent())
                 .font(.title2)
-                .foregroundColor(.green)
+                .foregroundColor(coin.priceChangePercentage24H > 0 ? .green :  .red)
         }
         .frame(width: 140, height: 140)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
                 .stroke(Color(.systemGray),lineWidth: 1))
+        //custom bacgrnd color created in assets. added 2% opacity, and white 7%. Top scroll view looks differently
+        .background(Color("ItemBackgroundColor"))
     }
 }
 
